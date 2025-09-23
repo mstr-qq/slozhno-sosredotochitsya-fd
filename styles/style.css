@@ -118,7 +118,7 @@
   font-size: var(--font-size-s);
   line-height: 23.4px;
   background-color: var(--accent-color);
-  color: var(--background-color);
+  color: var(--text-color-accent);
 }
 
 .section__title {
