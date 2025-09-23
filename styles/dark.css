@@ -3,10 +3,10 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-dark{
+:root.theme-dark {
   --background-color: #000028;
-  --background-img: url('/images/cover-image-dark.png');
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
-  --text-color: #F1B2CE;
+  --background-img: url("/images/cover-image-dark.png");
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --text-color: #f1b2ce;
 }
