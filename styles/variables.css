@@ -10,10 +10,12 @@
   --font-size-l: 120px;
   --font-size-xl: 157px;
   --accent-color: #ff0070;
+  --btn-accent-color: #ff0070;
   --title-color: #db00ff;
   --text-color: #f1b2ce;
   --font-fam: "IBM Plex Mono", sans-serif;
   --text-bold: 700;
   --text-regular: 400;
   --text-color-accent: #000028;
+  --decoration-display: block;
 }

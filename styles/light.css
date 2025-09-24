@@ -9,8 +9,10 @@
   --background-img: url("/images/cover-image-light.png");
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
+  --btn-accent-color: #353430;
   --text-color: #353430;
   --text-color-accent: #353430;
+  --decoration-display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,7 +20,10 @@
     --background-color: #fff1f7;
     --background-img: url("/images/cover-image-light.png");
     --accent-color: #ff8dcb;
+    --btn-accent-color:#353430;
     --title-color: #ffc2e6;
     --text-color: #353430;
+    --text-color-accent: #353430;
+    --decoration-display: none;
   }
 }
