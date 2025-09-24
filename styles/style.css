@@ -91,17 +91,17 @@
   line-height: 18px;
 }
 
-.header__theme-menu-button:hover{
+.header__theme-menu-button:hover {
   border: 1px solid var(--btn-accent-color);
 }
 
-.header__theme-menu-button:focus{
+.header__theme-menu-button:focus {
   border-bottom: 1px solid var(--btn-accent-color);
 }
 
 .header__theme-menu-button_active {
   border-color: var(--btn-accent-color);
-  pointer-events:none;
+  pointer-events: none;
 }
 
 .title-style {
@@ -168,16 +168,16 @@
   gap: 20px;
 }
 
-.section__link{
+.section__link {
   text-shadow: var(--accent-color) 2px 2px;
   text-decoration: none;
 }
 
-.section__link:hover{
+.section__link:hover {
   border-bottom: 1px solid var(--btn-accent-color);
 }
 
-.section__link:focus{
+.section__link:focus {
   border: 1px solid var(--btn-accent-color);
 }
 
