@@ -270,7 +270,6 @@
   font-size: var(--font-size-xl);
   line-height: 83%;
   color: var(--title-color);
-  text-shadow: 2px 2px var(--accent-color);
   margin-block-start: 0px;
   text-shadow: 2px 2px #ff0070;
 }
@@ -309,6 +308,7 @@
 @media (width < 1024px) {
   .footer__title {
     text-shadow: 2px 2px var(--accent-color);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__theme-menu-list {
@@ -342,10 +342,6 @@
   .section__list__column {
     grid-column: 2 / span 3;
     padding-left: 20px;
-  }
-
-  .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
