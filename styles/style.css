@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: var(--background-img);
   background-position: center;
   background-attachment: fixed;
   background-color: var(--background-color);
@@ -11,6 +10,11 @@
 }
 
 .header {
+  background-image: var(--background-img);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   height: 100vh;
   min-height: 768px;
@@ -24,7 +28,7 @@
   right: 50px;
   top: 20px;
   color: var(--accent-color);
-  font-family: var(--font-fam), monospace, sans-serif;
+  font-family: var(--font-fam), "monospace", sans-serif;
   font-weight: var(--text-regular);
   font-size: var(--font-size-s);
   line-height: 25px;
@@ -84,7 +88,7 @@
   color: var(--btn-accent-color);
   width: 70px;
   height: 26px;
-  font-family: var(--font-fam), monospace, sans-serif;
+  font-family: var(--font-fam), "monospace", sans-serif;
   font-weight: var(--text-regular);
   font-size: var(--font-size-s);
   text-transform: lowercase;
@@ -96,16 +100,18 @@
 }
 
 .header__theme-menu-button:focus {
+  border: none;
   border-bottom: 1px solid var(--btn-accent-color);
 }
 
 .header__theme-menu-button_active {
   border-color: var(--btn-accent-color);
   pointer-events: none;
+  border: 1px solid;
 }
 
 .title-style {
-  font-family: var(--font-fam), monospace, sans-serif;
+  font-family: var(--font-fam), "monospace", sans-serif;
   font-weight: var(--text-bold);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 83%;
@@ -122,7 +128,7 @@
 }
 
 .title-decor {
-  font-family: var(--font-fam), monospace, sans-serif;
+  font-family: var(--font-fam), "monospace", sans-serif;
   font-weight: var(--text-bold);
   font-size: var(--font-size-s);
   line-height: 23.4px;
@@ -131,7 +137,7 @@
 }
 
 .section__title {
-  font-family: var(--font-fam), monospace, sans-serif;
+  font-family: var(--font-fam), "monospace", sans-serif;
   font-weight: var(--text-bold);
   font-size: var(--font-size-s);
   line-height: 23.4px;
@@ -139,7 +145,7 @@
 }
 
 .section__text {
-  font-family: var(--font-fam), monospace, sans-serif;
+  font-family: var(--font-fam), "monospace", sans-serif;
   font-weight: var(--text-regular);
   font-size: var(--font-size-s);
   line-height: 23.4px;
@@ -259,12 +265,14 @@
 }
 
 .footer__title {
-  font-family: var(--font-fam), monospace, sans-serif;
+  font-family: var(--font-fam), "monospace", sans-serif;
   font-weight: 700;
   font-size: var(--font-size-xl);
   line-height: 83%;
   color: var(--title-color);
   text-shadow: 2px 2px var(--accent-color);
+  margin-block-start: 0px;
+  text-shadow: 2px 2px #ff0070;
 }
 
 .decoration__footer::after,
@@ -273,6 +281,10 @@
   display: block;
   border: 1px solid var(--btn-accent-color);
   position: absolute;
+}
+
+.section__list__advice {
+  padding-left: 0px;
 }
 
 .decoration__footer::after {
@@ -295,6 +307,10 @@
 }
 
 @media (width < 1024px) {
+  .footer__title {
+    text-shadow: 2px 2px var(--accent-color);
+  }
+
   .header__theme-menu-list {
     flex-direction: column;
     justify-self: end;
@@ -323,7 +339,7 @@
     min-width: 236px;
   }
 
-  .section__list__advice {
+  .section__list__column {
     grid-column: 2 / span 3;
     padding-left: 20px;
   }
@@ -411,8 +427,9 @@
     margin-block-start: 0px;
   }
 
-  .section__list__advice {
+  .section__list__column {
     margin-block-start: 19px;
+    gap: 0;
   }
 
   .section__gallery {
