@@ -4,7 +4,7 @@
 */
 :root {
   --background-color: #000028;
-  --background-img: url("/images/cover-image-dark.png");
+  --background-img: url("../images/cover-image-dark.png");
   --font-size-s: 18px;
   --font-size-m: 116px;
   --font-size-l: 120px;

@@ -6,10 +6,11 @@
 
 :root.theme-light {
   --background-color: #fff1f7;
-  --background-img: url("/images/cover-image-light.png");
+  --background-img: url("../images/cover-image-light.png");
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
   --btn-accent-color: #353430;
+  --btn-accent-color-hover:#32312D;
   --text-color: #353430;
   --text-color-accent: #353430;
   --decoration-display: none;
@@ -18,9 +19,10 @@
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #fff1f7;
-    --background-img: url("/images/cover-image-light.png");
+    --background-img: url("../images/cover-image-light.png");
     --accent-color: #ff8dcb;
     --btn-accent-color:#353430;
+    --btn-accent-color-hover:#32312D;
     --title-color: #ffc2e6;
     --text-color: #353430;
     --text-color-accent: #353430;

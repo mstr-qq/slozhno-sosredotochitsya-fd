@@ -5,10 +5,11 @@
 */
 :root.theme-dark {
   --background-color: #000028;
-  --background-img: url("/images/cover-image-dark.png");
+  --background-img: url("../images/cover-image-dark.png");
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --btn-accent-color: #ff0070;
+  --btn-accent-color-hover:#ff0070;
   --text-color: #f1b2ce;
   --text-color-accent: #000028;
   --decoration-display: block;
